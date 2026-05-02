@@ -2,13 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
-  const isLoggedIn = false; 
+  const isLoggedIn = false;
   const user = {
     name: "Suzon",
     avatar:
       "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
   };
-
 
   const Links = (
     <>
@@ -42,10 +41,8 @@ const Navbar = () => {
   );
 
   return (
-
     <nav className="sticky top-0 z-50 bg-white shadow-sm border-b border-orange-100">
-      <div className="navbar container mx-auto text-gray-800 px-2 sm:px-4 md:px-8 lg:px-12">
-   
+      <div className="navbar max-w-screen-2xl mx-auto text-gray-800 px-4 md:px-12">
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
             <div
@@ -68,7 +65,7 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-        
+
             <ul
               tabIndex={0}
               className="menu dropdown-content mt-3 z-10 p-2 shadow-lg bg-white text-gray-800 rounded-box w-52 border border-orange-100"
@@ -77,19 +74,16 @@ const Navbar = () => {
             </ul>
           </div>
 
-
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent px-1 sm:px-2 whitespace-nowrap">
             SkillSphere
           </h1>
         </div>
-
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-2 xl:gap-4 text-gray-700">
             {Links}
           </ul>
         </div>
-
 
         <div className="navbar-end gap-2">
           {isLoggedIn ? (

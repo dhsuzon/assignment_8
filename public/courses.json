@@ -6,7 +6,7 @@
         "rating": 4.8,
         "level": "Beginner",
         "description": "Learn full-stack web development from scratch using MERN stack.",
-        "image": "https://i.ibb.co/Lzf3vV7/web-dev.png",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600",
         "category": "Development"
     },
     {
@@ -17,7 +17,7 @@
         "rating": 4.9,
         "level": "Intermediate",
         "description": "Build high-performance web applications with Next.js 14.",
-        "image": "https://i.ibb.co/vXyY7fB/nextjs.png",
+        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
         "category": "Development"
     },
     {
@@ -28,7 +28,7 @@
         "rating": 4.7,
         "level": "Beginner",
         "description": "Master Figma and design beautiful user interfaces.",
-        "image": "https://i.ibb.co/fN1vVvD/uiux.png",
+        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?auto=format&fit=crop&q=80&w=600",
         "category": "Design"
     },
     {
@@ -39,7 +39,7 @@
         "rating": 4.6,
         "level": "All Levels",
         "description": "Grow your business with SEO, SEM, and Social Media Marketing.",
-        "image": "https://i.ibb.co/m0yVvVC/marketing.png",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
         "category": "Marketing"
     },
     {
@@ -50,7 +50,7 @@
         "rating": 4.8,
         "level": "Intermediate",
         "description": "Learn Python libraries like Pandas, NumPy, and Matplotlib.",
-        "image": "https://i.ibb.co/ZzVvVvE/python-ds.png",
+        "image": "https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=600",
         "category": "Data Science"
     },
     {
@@ -61,7 +61,7 @@
         "rating": 4.5,
         "level": "Advanced",
         "description": "Master Adobe Illustrator and Photoshop for professional branding.",
-        "image": "https://i.ibb.co/k0yVvVF/graphic-design.png",
+        "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=600",
         "category": "Design"
     },
     {
@@ -72,7 +72,7 @@
         "rating": 4.7,
         "level": "Intermediate",
         "description": "Build scalable backend systems with Node and MongoDB Atlas.",
-        "image": "https://i.ibb.co/j0yVvVG/nodejs.png",
+        "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80&w=600",
         "category": "Development"
     },
     {
@@ -83,7 +83,7 @@
         "rating": 4.9,
         "level": "Beginner",
         "description": "Create high-converting ad campaigns and grow your audience.",
-        "image": "https://i.ibb.co/h0yVvVH/social-media.png",
+        "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=600",
         "category": "Marketing"
     },
     {
@@ -94,7 +94,7 @@
         "rating": 4.8,
         "level": "Beginner",
         "description": "Protect your digital assets and learn ethical hacking basics.",
-        "image": "https://i.ibb.co/g0yVvVI/cyber-security.png",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600",
         "category": "IT & Software"
     },
     {
@@ -102,10 +102,10 @@
         "title": "Full-Stack Django with Python",
         "instructor": "Michael Scott",
         "duration": "25 hours",
-        "rating": 4.6,
+        "rating": 8.0,
         "level": "Intermediate",
         "description": "Build robust web applications using Python and Django framework.",
-        "image": "https://i.ibb.co/e0yVvVJ/django.png",
+        "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=600",
         "category": "Development"
     }
 ]
