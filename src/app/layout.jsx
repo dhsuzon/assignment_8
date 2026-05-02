@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar/>
         {children}
+        <Toaster position="top-center" reverseOrder={false}/>
          <Footer/>
         </body>
     </html>
