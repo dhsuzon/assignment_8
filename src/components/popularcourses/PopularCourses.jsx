@@ -64,7 +64,7 @@ const PopularCourses = async () => {
                 </p>
                 <div className="mt-auto">
                   <Link
-                    href={`/`}
+                    href={`/courses/${course.id}`}
                     className="flex items-center justify-center w-full py-4 border-2 border-orange-500 text-orange-600 font-bold rounded-2xl hover:bg-orange-500 hover:text-white transition-all duration-300"
                   >
                     View Details
