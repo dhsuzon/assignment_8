@@ -1,19 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const TopThreeCourse = async () => {
-  try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/courses.json`,
-      { next: { revalidate: 3600 } },
-    );
-    if (!res.ok) return [];
-    return await res.json();
-  } catch (error) {
-    console.error("Course fetch failed:", error);
-    return [];
-  }
-};
+import { TopThreeCourse } from "@/utilit/TopCourses";
 
 const PopularCourses = async () => {
   const allCourses = await TopThreeCourse();
@@ -23,7 +11,6 @@ const PopularCourses = async () => {
 
   return (
     <section className="py-10 bg-white w-full">
-      
       <div className="max-w-screen-2xl mx-auto px-4 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">

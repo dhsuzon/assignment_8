@@ -74,9 +74,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent px-1 sm:px-2 whitespace-nowrap">
+          <span className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-linear-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent px-1 sm:px-2 whitespace-nowrap">
             SkillSphere
-          </h1>
+          </span>
         </div>
 
         <div className="navbar-center hidden lg:flex">

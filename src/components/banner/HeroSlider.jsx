@@ -40,6 +40,7 @@ export default function HeroSlider() {
                   fill
                   priority={index === 0}
                   className="object-cover"
+                  loading="eager"
                 />
                 <div className="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-center px-4 md:px-12">
                   <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 drop-shadow-2xl leading-tight">

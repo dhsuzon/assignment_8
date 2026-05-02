@@ -28,7 +28,7 @@
         "rating": 4.7,
         "level": "Beginner",
         "description": "Master Figma and design beautiful user interfaces.",
-        "image": "https://images.unsplash.com/photo-1586717791821-3f44a563dc4c?auto=format&fit=crop&q=80&w=600",
+        "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&auto=format&fit=crop",
         "category": "Design"
     },
     {
@@ -50,7 +50,7 @@
         "rating": 4.8,
         "level": "Intermediate",
         "description": "Learn Python libraries like Pandas, NumPy, and Matplotlib.",
-        "image": "https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=600",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600",
         "category": "Data Science"
     },
     {
@@ -102,7 +102,7 @@
         "title": "Full-Stack Django with Python",
         "instructor": "Michael Scott",
         "duration": "25 hours",
-        "rating": 8.0,
+        "rating": 4.9,
         "level": "Intermediate",
         "description": "Build robust web applications using Python and Django framework.",
         "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=600",
