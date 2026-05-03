@@ -6,11 +6,22 @@ import { FaSearch } from "react-icons/fa";
 
 import { getCourses } from "@/utilit/getCoureses";
 import CourseCard from "@/components/course/CourseCard";
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+
 
 
 const AllCoursesPage = async ({ searchParams }) => {
-  const allCourses = await getCourses();
 
+  const session = await auth.api.getSession({
+    headers: await headers()
+  })
+  if(!session){
+    redirect("/login")
+  }
+
+  const allCourses = await getCourses();
   const params = await searchParams;
   const searchQuery = params?.search?.toLowerCase() || "";
 

@@ -1,6 +1,7 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProfilePage = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -9,7 +10,7 @@ const ProfilePage = () => {
   if (isPending)
     return (
       <div className="min-h-screen flex justify-center items-center">
-        Loading...
+        <span className="loading loading-spinner loading-lg text-orange-500"></span>
       </div>
     );
 
@@ -23,8 +24,11 @@ const ProfilePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+        {/* Banner Section */}
         <div className="h-32 bg-gradient-to-r from-orange-500 to-yellow-400"></div>
+
         <div className="px-8 pb-10">
+          {/* Profile Image */}
           <div className="relative flex justify-center sm:justify-start">
             <div className="absolute -top-16 w-32 h-32 rounded-3xl border-4 border-white shadow-lg overflow-hidden bg-white">
               <Image
@@ -35,45 +39,53 @@ const ProfilePage = () => {
                 alt="Profile"
                 width={128}
                 height={128}
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
           </div>
 
           <div className="mt-20 text-center sm:text-left">
-            <h1 className="text-3xl font-black text-gray-900">{user?.name}</h1>
-            <p className="text-gray-500 font-medium">{user?.email}</p>
+            {/* Name and Email */}
+            <h1 className="text-4xl font-black text-gray-900 leading-tight">
+              {user?.name}
+            </h1>
+            <p className="text-gray-500 font-medium text-lg">{user?.email}</p>
 
             <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-              <span className="px-4 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-bold uppercase">
-                Software Engineer
+              <span className="px-4 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-bold uppercase tracking-wider">
+                Full-Stack Developer
               </span>
-              <span className="px-4 py-1 bg-gray-100 text-gray-600 rounded-full text-sm font-bold uppercase">
-                Active User
+              <span className="px-4 py-1 bg-slate-100 text-slate-600 rounded-full text-sm font-bold uppercase tracking-wider">
+                Active Member
               </span>
             </div>
 
             <div className="divider my-8"></div>
 
+            {/* Profile Details Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">
+              <div className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
+                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">
                   Full Name
                 </p>
-                <p className="text-lg font-bold text-gray-800">{user?.name}</p>
+                <p className="text-xl font-bold text-gray-800">{user?.name}</p>
               </div>
-              <div className="p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">
+              <div className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
+                <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">
                   Email Address
                 </p>
-                <p className="text-lg font-bold text-gray-800">{user?.email}</p>
+                <p className="text-xl font-bold text-gray-800">{user?.email}</p>
               </div>
             </div>
 
+            {/* Action Button - Redirects to Update Route */}
             <div className="mt-10">
-              <button className="btn bg-orange-500 hover:bg-orange-600 border-none text-white font-bold px-8 rounded-xl shadow-lg shadow-orange-200">
+              <Link
+                href="/my-profile/update"
+                className="btn bg-orange-500 hover:bg-orange-600 border-none text-white font-bold px-10 rounded-xl shadow-lg shadow-orange-100 text-lg transition-all transform hover:scale-105"
+              >
                 Edit Profile
-              </button>
+              </Link>
             </div>
           </div>
         </div>
