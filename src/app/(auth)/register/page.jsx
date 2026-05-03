@@ -13,6 +13,7 @@ import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import SocialLogin from "@/components/socialauth/SocialLogin";
 
 const RegisterPage = () => {
   const router = useRouter();
@@ -137,7 +138,7 @@ const RegisterPage = () => {
             {loading ? "Processing..." : "Register Now"}
           </button>
         </form>
-
+        <SocialLogin/>
         <p className="text-center mt-8 text-gray-500 text-sm font-medium">
           Already have an account?{" "}
           <Link

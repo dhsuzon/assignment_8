@@ -24,11 +24,9 @@ const ProfilePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-        {/* Banner Section */}
         <div className="h-32 bg-gradient-to-r from-orange-500 to-yellow-400"></div>
 
         <div className="px-8 pb-10">
-          {/* Profile Image */}
           <div className="relative flex justify-center sm:justify-start">
             <div className="absolute -top-16 w-32 h-32 rounded-3xl border-4 border-white shadow-lg overflow-hidden bg-white">
               <Image
@@ -45,7 +43,6 @@ const ProfilePage = () => {
           </div>
 
           <div className="mt-20 text-center sm:text-left">
-            {/* Name and Email */}
             <h1 className="text-4xl font-black text-gray-900 leading-tight">
               {user?.name}
             </h1>
@@ -61,8 +58,6 @@ const ProfilePage = () => {
             </div>
 
             <div className="divider my-8"></div>
-
-            {/* Profile Details Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
                 <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">
@@ -77,8 +72,6 @@ const ProfilePage = () => {
                 <p className="text-xl font-bold text-gray-800">{user?.email}</p>
               </div>
             </div>
-
-            {/* Action Button - Redirects to Update Route */}
             <div className="mt-10">
               <Link
                 href="/my-profile/update"
