@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 SkillSphere – Online Learning Platform
 
-## Getting Started
+**SkillSphere** is a modern and intuitive online learning platform designed to help users explore, search, and manage their educational journey. Built with **Next.js 15**, it offers a seamless experience for students to find courses in Web Development, Design, Marketing, and more.
 
-First, run the development server:
+## 🚀 Live URL
+[Insert Your Vercel Live Link Here]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Purpose
+The goal of this project is to provide a user-friendly environment where learners can access high-quality skill-based programs. It implements a secure authentication system, dynamic search functionality, and a personalized profile management system to ensure an engaging learning experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
+- **Secure Authentication:** Integrated **Better-Auth** for Email/Password and Google Social Login.
+- **Protected Routes:** Premium content and course details are only accessible to registered users.
+- **Dynamic Search:** Real-time course filtering by title or category on the "All Courses" page.
+- **User Profile Management:** Dedicated profile page for users to view and update their name and profile picture.
+- **Interactive UI:** Smooth sliders and carousels for trending courses using **Swiper.js**.
+- **Responsive Design:** Fully optimized for Mobile, Tablet, and Desktop using **Tailwind CSS**.
+- **Real-time Notifications:** Instant feedback for user actions (login, update, errors) via **React Hot Toast**.
+- **Custom 404 Page:** A unique and helpful "Not Found" page for better user navigation.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ NPM Packages Used
+The following libraries were used to build the application:
+- `next` (Framework)
+- `better-auth` (Authentication)
+- `swiper` (Modern Touch Slider)
+- `react-hot-toast` (Toast Notifications)
+- `react-icons` (Icon Library)
+- `lucide-react` (Clean SVG Icons)
+- `daisyui` / `heroui` (Tailwind CSS Components)
+- `framer-motion` (For animations - optional)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Installation & Setup
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/skillsphere.git](https://github.com/dhsuzon/assignment_8.git)
