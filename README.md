@@ -3,7 +3,7 @@
 **SkillSphere** is a modern and intuitive online learning platform designed to help users explore, search, and manage their educational journey. Built with **Next.js 15**, it offers a seamless experience for students to find courses in Web Development, Design, Marketing, and more.
 
 ## 🚀 Live URL
-[Insert Your Vercel Live Link Here]
+[https://skillsphere-eosin.vercel.app](https://skillsphere-eosin.vercel.app)
 
 ## 📌 Project Purpose
 The goal of this project is to provide a user-friendly environment where learners can access high-quality skill-based programs. It implements a secure authentication system, dynamic search functionality, and a personalized profile management system to ensure an engaging learning experience.
@@ -15,11 +15,10 @@ The goal of this project is to provide a user-friendly environment where learner
 - **User Profile Management:** Dedicated profile page for users to view and update their name and profile picture.
 - **Interactive UI:** Smooth sliders and carousels for trending courses using **Swiper.js**.
 - **Responsive Design:** Fully optimized for Mobile, Tablet, and Desktop using **Tailwind CSS**.
-- **Real-time Notifications:** Instant feedback for user actions (login, update, errors) via **React Hot Toast**.
+- **Real-time Notifications:** Instant feedback for user actions via **React Hot Toast**.
 - **Custom 404 Page:** A unique and helpful "Not Found" page for better user navigation.
 
 ## 🛠️ NPM Packages Used
-The following libraries were used to build the application:
 - `next` (Framework)
 - `better-auth` (Authentication)
 - `swiper` (Modern Touch Slider)
@@ -27,9 +26,15 @@ The following libraries were used to build the application:
 - `react-icons` (Icon Library)
 - `lucide-react` (Clean SVG Icons)
 - `daisyui` / `heroui` (Tailwind CSS Components)
-- `framer-motion` (For animations - optional)
+- `framer-motion` (For UI animations)
 
 ## 🔧 Installation & Setup
-1. **Clone the repository:**
-   ```bash
-   git clone  [https://github.com/dhsuzon/assignment_8.git](https://github.com/dhsuzon/assignment_8.git)
+
+To get this project up and running locally, follow these steps:
+
+### 1. Clone and Install Dependencies
+Run the following commands to clone the repository and install everything at once:
+```bash
+git clone [https://github.com/dhsuzon/assignment_8.git](https://github.com/dhsuzon/assignment_8.git)
+cd assignment_8
+npm install
